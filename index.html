@@ -167,10 +167,10 @@ body{cursor:default}
 
 /* ─ 2b · Generic vs evidence ─ */
 .cmp{position:absolute;inset:0;transition:opacity 1s var(--ease),filter 1s var(--ease)}
-.slide.s4 .cmp{opacity:.14;filter:blur(5px)}
+.slide.s3 .cmp{opacity:.14;filter:blur(5px)}
 .cmp .head{top:110px}
 .illu{position:absolute;right:160px;top:118px;font-size:18px;font-weight:600;color:rgba(248,244,251,.6);border:1px solid var(--line);border-radius:999px;padding:8px 16px}
-.gmail{position:absolute;left:160px;top:320px;width:540px;padding:32px 34px;transition:opacity .8s var(--ease),transform .9s var(--ease),filter .8s var(--ease)}
+.gmail{position:absolute;left:160px;top:330px;width:640px;padding:32px 34px;transition:opacity .8s var(--ease),transform .9s var(--ease),filter .8s var(--ease)}
 .slide.s2 .gmail.on{opacity:.4;filter:grayscale(1)}
 .mfrom{display:flex;align-items:center;gap:14px;font-size:21px;font-weight:700}
 .mfrom .av{width:44px;height:44px;border-radius:50%;background:var(--lavsoft);color:var(--deep);font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center}
@@ -183,11 +183,11 @@ body{cursor:default}
 .score{display:inline-flex;align-items:center;gap:10px;font-size:22px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 18px;border-radius:999px;margin-bottom:6px}
 .score.bad{color:var(--warn);border:1px solid rgba(224,138,126,.5)}
 .score.good{color:#1E7A52;background:#E4F5EC}
-.smail{position:absolute;left:760px;top:300px;width:1020px;display:grid;grid-template-columns:680px 1fr;column-gap:40px;align-items:center}
-.smail .bg{position:absolute;left:0;top:0;bottom:0;width:680px;border-radius:28px;background:#fff;box-shadow:0 0 0 4px rgba(196,159,213,0),0 30px 80px rgba(8,2,8,.45);transform:scale(.97);opacity:0;transition:opacity .6s var(--ease),transform .8s var(--ease),box-shadow 1s}
+.smail{position:absolute;left:880px;top:300px;width:880px;display:grid;grid-template-columns:1fr}
+.smail .bg{position:absolute;left:0;top:0;bottom:0;width:880px;border-radius:28px;background:#fff;box-shadow:0 0 0 4px rgba(196,159,213,0),0 30px 80px rgba(8,2,8,.45);transform:scale(.97);opacity:0;transition:opacity .6s var(--ease),transform .8s var(--ease),box-shadow 1s}
 .slide.active .smail.on .bg{opacity:1;transform:none}
-.slide.s3 .smail .bg{box-shadow:0 0 0 4px var(--lav),0 30px 80px rgba(8,2,8,.45)}
-.blk{grid-column:1;position:relative;color:var(--ink);padding:12px 34px;opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .6s var(--ease),background .6s}
+.slide.s2 .smail .bg{box-shadow:0 0 0 4px var(--lav),0 30px 80px rgba(8,2,8,.45)}
+.blk{grid-column:1;position:relative;color:var(--ink);padding:14px 40px;opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .6s var(--ease),background .6s}
 .blk.first{padding-top:30px}.blk.last{padding-bottom:30px}
 .slide.active .smail.on .blk{opacity:1;transform:none}
 .blk p{font-size:23px;line-height:1.42;color:#4A3255}
@@ -315,7 +315,7 @@ body{cursor:default}
  </section>
 
  <!-- 02b · Generic vs evidence -->
- <section class="slide" data-steps="4" data-notes="<b>What makes a prospect say yes?</b> (click) “This is how most cold outreach looks. Generic. Every company says the same.” (click) “Now compare it with a message built on real, approved experience: it speaks to their problem, shows real metrics, cites a case we can share, names the expert, and offers a clear next step.” (click) “Five reasons to take the meeting, against zero.” (click) “<b>The evidence already exists. We just need to find it.</b>”">
+ <section class="slide" data-steps="3" data-notes="<b>What makes a prospect say yes?</b> (click) “This is how most cold outreach looks. Generic. Every company says the same.” (click) “Now compare it with a message built on real, approved experience: it speaks to their problem, shows real metrics, cites a case we can share, names the expert, and offers a clear next step.” (click) “<b>The evidence already exists. We just need to find it.</b>”">
   <div class="cmp">
    <div class="head"><div class="eyebrow r on" data-step="0">Generic vs. evidence</div><div class="h2 r on d1" data-step="0">What makes a prospect <span class="lav">say yes?</span></div></div>
    <div class="illu r on d2" data-step="0">Illustrative example</div>
@@ -324,10 +324,9 @@ body{cursor:default}
     <div class="msubj">Quick question</div>
     <p>Hi! We’re a leading software company with world-class engineers and 20 years of experience. Do you have 15 minutes next week?</p>
    </div>
-   <div class="gcrit r" data-step="3"><span class="score bad">0 of 5</span><div><i>×</i>No relevance</div><div><i>×</i>No proof</div><div><i>×</i>No credibility</div><div><i>×</i>No expert</div><div><i>×</i>No clear next step</div></div>
-   <div class="smail" data-step="2"><div class="bg"></div><div class="blk first" style="transition-delay:0.1s"><div class="mfrom"><div class="av">99</div>99x Sales<span>To: Head of E-commerce</span></div><div class="msubj">How we made checkout 4× faster under peak traffic</div></div><div class="co top" style="transition-delay:.1s"><span class="score good">5 of 5</span></div><div class="blk" style="transition-delay:0.4s"><p>You’re scaling for peak season. Slow checkout under load is a problem we’ve solved before.</p></div><div class="co" style="transition-delay:0.4s"><span class="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/></svg></span><div><b>Relevance</b><small>Speaks to their problem</small></div></div><div class="blk" style="transition-delay:0.8s"><div class="tiles"><div><span class="label">p95 checkout time</span><b><em>4.2s →</em> <span>0.9s</span></b></div><div><span class="label">Peak-day downtime</span><b><span>Zero</span></b></div></div></div><div class="co" style="transition-delay:0.8s"><span class="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/></svg></span><div><b>Proof</b><small>Real metrics, not adjectives</small></div></div><div class="blk" style="transition-delay:1.2s"><span class="chip ok" style="background:#E4F5EC;color:#1E7A52">✓ Approved case · Retail platform (anonymized)</span></div><div class="co" style="transition-delay:1.2s"><span class="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/></svg></span><div><b>Credibility</b><small>A case we’re allowed to share</small></div></div><div class="blk" style="transition-delay:1.6s"><div class="exp"><div class="av">SE</div><div><b>Senior engineer who led the fix</b><br><span style="color:#9A8AA1">Performance · Payments</span></div></div></div><div class="co" style="transition-delay:1.6s"><span class="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/></svg></span><div><b>Expertise</b><small>A real person behind it</small></div></div><div class="blk last" style="transition-delay:2.0s"><span class="cta">20 min to walk you through what worked →</span></div><div class="co" style="transition-delay:2.0s"><span class="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round"/></svg></span><div><b>Clear next step</b><small>Easy to say yes</small></div></div></div>
+   <div class="smail" data-step="2"><div class="bg"></div><div class="blk first" style="transition-delay:0.1s"><div class="mfrom"><div class="av">99</div>99x Sales<span>To: Head of E-commerce</span></div><div class="msubj">How we made checkout 4× faster under peak traffic</div></div><div class="blk" style="transition-delay:0.4s"><p>You’re scaling for peak season. Slow checkout under load is a problem we’ve solved before.</p></div><div class="blk" style="transition-delay:0.8s"><div class="tiles"><div><span class="label">p95 checkout time</span><b><em>4.2s →</em> <span>0.9s</span></b></div><div><span class="label">Peak-day downtime</span><b><span>Zero</span></b></div></div></div><div class="blk" style="transition-delay:1.2s"><span class="chip ok" style="background:#E4F5EC;color:#1E7A52">✓ Approved case · Retail platform (anonymized)</span></div><div class="blk" style="transition-delay:1.6s"><div class="exp"><div class="av">SE</div><div><b>Senior engineer who led the fix</b><br><span style="color:#9A8AA1">Performance · Payments</span></div></div></div><div class="blk last" style="transition-delay:2.0s"><span class="cta">20 min to walk you through what worked →</span></div></div>
   </div>
-  <div class="quote2b r" data-step="4"><div class="h2">The evidence already exists.<br><span class="grad">We just need to find it.</span></div></div>
+  <div class="quote2b r" data-step="3"><div class="h2">The evidence already exists.<br><span class="grad">We just need to find it.</span></div></div>
  </section>
 
  <!-- 03 · The reveal (light) -->
@@ -349,11 +348,10 @@ body{cursor:default}
  </section>
 
  <!-- 04 · The experience -->
- <section class="slide" data-steps="1" data-notes="<b>04 · Live demo (2:00–3:30).</b> The most important moment. (click) Switch to the prototype. Rehearsed, 90 seconds: the agent asks a smart question → extracts the information → proposes anonymization → saves with approval → then search it as someone from sales.">
+ <section class="slide" data-steps="0" data-notes="<b>04 · Live demo (2:00–3:30).</b> The most important moment. Switch to the prototype. Rehearsed, 90 seconds: the agent asks a smart question → extracts the information → proposes anonymization → saves with approval → then search it as someone from sales.">
   <div class="center">
    <div class="eyebrow r on" data-step="0"><span class="live"><i></i>04 — Live demo</span></div>
    <div class="h1 r on split" data-step="0" style="margin-top:40px">See it in action.</div>
-   <div class="steps4 r" data-step="1"><span class="st">CAPTURE</span><svg viewBox="0 0 60 30"><path d="M4 15h48M40 5l12 10-12 10"/></svg><span class="st">REVIEW</span><svg viewBox="0 0 60 30"><path d="M4 15h48M40 5l12 10-12 10"/></svg><span class="st">REUSE</span></div>
   </div>
  </section>
 
